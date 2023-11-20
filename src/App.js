@@ -15,6 +15,9 @@ function App() {
   //   return dispatch(addOne());
   // };
 
+  const eventHandler = (number) => {
+    return dispatch(applyNumber());
+  };
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
