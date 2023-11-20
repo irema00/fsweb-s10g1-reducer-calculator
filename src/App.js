@@ -16,8 +16,9 @@ function App() {
   // };
 
   const eventHandler = (number) => {
-    return dispatch(applyNumber());
+    return dispatch(applyNumber(number));
   };
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -44,7 +45,10 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={1} /*onClick={eventHandler}*/ />
+              <CalcButton
+                value={1}
+                /*onClick={eventHandler}*/ onClick={() => eventHandler(1)}
+              />
               <CalcButton value={2} />
               <CalcButton value={3} />
             </div>
