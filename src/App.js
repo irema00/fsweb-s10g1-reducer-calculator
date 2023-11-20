@@ -11,9 +11,9 @@ import { addOne, applyNumber } from "./actions/index";
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const eventHandler = () => {
-    return dispatch(addOne());
-  };
+  // const eventHandler = () => {
+  //   return dispatch(addOne());
+  // };
 
   return (
     <div className="App">
@@ -41,7 +41,7 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={1} onClick={eventHandler} />
+              <CalcButton value={1} /*onClick={eventHandler}*/ />
               <CalcButton value={2} />
               <CalcButton value={3} />
             </div>
