@@ -6,6 +6,10 @@
 Her adım için kodun hangi bölümünün geçerli olduğunu listeleyin.
 
 - Kullanıcı 1 butonuna tıkadı.
-- ...
-
+- 1 butonundaki onClick çalıştı.
+  -1 butonundaki onClick, App.js içerisindeki eventHandler fonksiyonuna ulaştı.
+  -App.js içerisindeki eventHandler çalıştı.
+  -eventHandler addOne actiona ulaştı.
+  -addOne action çalıştı.
+  addOne action total value'ya artı 1 ekledi.
 - TotalDisplay total artı 1'i gösterdi.
