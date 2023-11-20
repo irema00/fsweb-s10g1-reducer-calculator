@@ -11,7 +11,9 @@ import { addOne } from "./actions/index";
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const eventHandler = () => {};
+  const eventHandler = () => {
+    return dispatch(addOne());
+  };
 
   return (
     <div className="App">
