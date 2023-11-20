@@ -27,6 +27,11 @@ function App() {
   const operationHandler = (operation) => {
     return dispatch(changeOperation(operation));
   };
+
+  const clearHandler = () => {
+    return dispatch(clearDisplay());
+  };
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -80,7 +85,7 @@ function App() {
             </div>
 
             <div className="row ce_button">
-              <CalcButton value={"CE"} />
+              <CalcButton value={"CE"} onClick={clearDisplay} />
             </div>
           </form>
         </div>
