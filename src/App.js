@@ -6,6 +6,8 @@ import CalcButton from "./components/CalcButton";
 import { useReducer } from "react";
 import reducer, { initialState } from "../src/reducers/index";
 
+import { addOne } from "./actions/index";
+
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
